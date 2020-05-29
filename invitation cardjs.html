@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>invitation_card</title>
+</head>
+<link href="https://fonts.googleapis.com/css?family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+
+<style type="text/css">
+    #maindiv{
+        /*background-image:url("inviatation_card.jpg");
+        height:700px;
+        width:100%;
+        background-repeat:no-repeat;
+        background-size:cover;*/
+        display:flex;
+        margin-left:80px;
+        margin-top:100px;
+        
+
+    }
+    .div1{
+        background-image: url('pastel-pintura-al-oleo-sobre-lienzo-fondo_53876-93729.jpg');
+        /*background-color:#FDEBCD;*/
+        height:650px;
+        width:600px;
+        
+
+    }
+    
+
+    
+    .heading1{
+        text-align:center;
+        color:#990000;
+        margin-top:120px;
+        font-style: oblique;
+        font-size:50px;
+        
+    }
+    #demo1{
+        padding-right:100px;
+        padding-bottom:20px;
+        margin-left:200px;
+        margin-bottom:20px;
+        font-style:oblique;
+        font-weight:bold;
+        text-align:center;
+        
+    }
+    #demo2{
+        padding-right:100px;
+        padding-bottom:20px;
+        margin-left:200px;
+        margin-bottom:20px;
+        font-style:oblique;
+        font-weight:bold;
+        text-align:center;
+        
+    }
+    #demo3{
+        padding-right:100px;
+        padding-bottom:20px;
+        margin-left:200px;
+        margin-bottom:20px;
+        font-style:oblique;
+        font-weight:bold;
+        text-align:center;
+    }
+    #demo4{
+        padding-right:100px;
+        padding-bottom:20px;
+        margin-left:200px;
+        margin-bottom:20px;
+        font-style:oblique;
+        font-weight:bold;
+        text-align:center;
+    }
+     #demo5{
+        padding-right:100px;
+        padding-bottom:20px;
+        margin-left:200px;
+        margin-bottom:20px;
+        font-style:oblique;
+        font-weight:bold;
+        text-align:center;
+    }
+    ::placeholder{
+        color:blue;
+
+    }
+    #demo3::placeholder{
+        color:#F7B762;
+    }
+    
+    
+    
+    
+    .div2{
+        background-image:url("istockphoto-700986104-1024x1024.jpg");
+        background-repeat:no-repeat;
+        background-size:cover;
+        height:650px;
+        width:600px;
+        text-align:center;
+
+    }
+    .heading2{
+        color:#990000;
+        margin-top:120px;
+        text-align: center;
+        font-style:oblique;
+        font-size:50px;
+    }
+    #name1{
+        color:#2929a3;
+        font-size:50px;
+        font-style:oblique;
+
+    }
+    #day1{
+        color:#333300;
+        font-weight:bold;
+        font-size:25px;
+        font-style:oblique;
+    }
+     #date1{
+        color:#54a361;
+        font-weight:bold;
+        font-size:25px;
+        font-style:oblique;
+    }
+    #address{
+        color:#333300;
+        font-weight:bold;
+        font-size:25px;
+        font-style:oblique;
+    }
+   #Invited{
+        color:#2929a3;
+        font-weight:bold;
+        font-size:25px;
+        font-style:oblique;
+    }
+    .heading3{
+        color:#990000;
+        font-weight:bold;
+        font-size:50px;
+        font-style:oblique;
+    }
+
+
+    
+</style>
+<body>
+    <div id="maindiv">
+        <div class="div1">
+            <h1 class="heading1">Invitation Card</h1>
+            <input type="text" id="demo1" oninput="valueChange1()"  placeholder="Enter Name">
+            <br>
+            <input type="text" id="demo2"  oninput="valueChange2()" placeholder="Enter Day">
+            <br>
+            <input type="text" id="demo3" oninput="valueChange3()" placeholder="dd/mm/yyyy">
+            <br>
+            
+            <input type="text" id="demo4" oninput="valueChange4()" placeholder="Enter Address">
+            <br>
+            <input type="text" id="demo5" oninput="valueChange5()" placeholder="Invited by">
+            <br>
+            
+        </div>
+        <div class="div2">
+            <h1 class="heading2">Join Us As we Celebrate</h1>
+            <h2 id="name1">Name</h2>
+            <h1 class="heading3">Birthday</h1>
+            <p id="day1">Day,27-dec-1996,at12:59Am</p>
+            <p id="date1">27/08/1996    </p>
+            <p id="address">Borivali,Mumbai </p>
+            <p id="Invited">Invited by:Shreya   </p>
+            
+        </div>
+        
+    </div>
+
+
+    <script>
+        function valueChange1(){
+            var a=document.getElementById('demo1').value;
+            document.getElementById('name1').innerHTML=a
+
+        }
+        function valueChange2(){
+            var a=document.getElementById('demo2').value;
+            document.getElementById('day1').innerHTML=a
+        }
+        function  valueChange3(){
+            var a=document.getElementById('demo3').value;
+            document.getElementById('date1').innerHTML=a
+
+        }
+         function valueChange4(){
+            var a=document.getElementById('demo4').value;
+            document.getElementById('address').innerHTML=a
+
+         }
+         function  valueChange5(){
+            var a=document.getElementById('demo5').value;
+            document.getElementById('Invited').innerHTML=a
+
+         }
+        
+    </script>
+
+</body>
+</html>
